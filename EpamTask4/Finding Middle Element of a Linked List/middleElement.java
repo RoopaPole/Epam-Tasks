@@ -20,35 +20,35 @@ public class LinkedList
 	}
 	
 	void insert(int val)
-  {
-      Node newnode = new Node();
-      newnode.data = val;
+	  {
+	      Node newnode = new Node();
+	      newnode.data = val;
 
-      if(head == null)
-      {
-        head = newnode;
-        next = newnode;
-      }
-      else
-      {
-        next.next = newnode;
-        next = newnode;
-      }
+	      if(head == null)
+	      {
+		head = newnode;
+		next = newnode;
+	      }
+	      else
+	      {
+		next.next = newnode;
+		next = newnode;
+	      }
 	}
 	int middle()
-  {
+	  {
 		Node temp1 = head;
 		Node temp2 = head;
 		while((temp2 != null) && (temp2.next != null))
-    {
+	  	  {
 			temp1 = temp1.next;
 			temp2 = temp2.next.next;
-		}
+		  }
 		return temp1.data;
 	}
-	
+
 }
-public class MiddleElement 
+public class middleElement 
 {
 	public static void main(String []args)
   {
